@@ -9,6 +9,7 @@ def computeMinimumPayment( balance ):
         return balance
     elif balance > 10:
         balance = balance * 0.021
+        return balance
     elif balance < 10:
         balance = 10
         return balance
