@@ -5,9 +5,7 @@
 #   Example 4: if your balance is 8, then your program should return 8. 
 
 def computeMinimumPayment( balance ):
-    if balance <= 10:
-        return balance
-    elif balance > 10:
+    if balance > 10:
         balance = balance * 0.021
         return balance
     elif balance < 10:
