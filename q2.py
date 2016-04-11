@@ -40,15 +40,14 @@ def subtractSticks( number ):
     # TODO: write code inside this function that:
     
     # 1. subtracts the parameter `number` from the global variable `sticks`
-    if sticks - number < 0:
-        sticks = 1
-    else:
-        sticks = sticks - number 
-
+    sticks = sticks - number
+    
     if sticks <= 1: # 2. checks if the number subtracted resulted in the last stick, if so, return True
         return True
-    elif sticks:# 3. if there are still sticks left, return False 
+    
+    else:# 3. if there are still sticks left, return False 
         return False
+    
     
 def determineComputerChoice():
     r = random.randint(1, 4)
